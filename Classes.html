@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+
+<body>
+    <style>
+        .class-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .class-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .class-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .class-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .class-card h2 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        .class-card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .time-slot {
+            font-weight: bold;
+            color: #444;
+        }
+
+        .enroll-btn {
+            background: #ff4d4d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .enroll-btn:hover {
+            background: #ff3333;
+        }
+        /* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #555;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    margin: 1rem;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+    </style>
+    <h1 style="text-align: center; color: #333; margin: 40px 0; font-size: 36px; font-weight: bold;">Our Fitness Classes
+    </h1>
+
+    <div class="class-container">
+        <div class="class-card">
+            <img src="yoga.jpg" alt="Yoga Class" class="class-image">
+            <h2>Yoga Flow</h2>
+            <p>Power Yoga is one step ahead of regular yoga. It is the medicine to the soul and also, it increases flexibility and strength in the body. It was transformed in America and it is a bit tougher than the yoga which we used to do. Power yoga requires special trainers who can perform and balance those postures with an ease. Our trainers are well qualified and have the required skills of the niche. We have built a team of people who can train and guide you and provides personal assistance to each person. No person should feel lethargic, and that is our sole motive.</p>
+            <p class="time-slot">Mon & Wed: 9:00 AM</p>
+            <a href="Enroll Now.html">
+            <button class="enroll-btn">Enroll Now</button>
+        </a>
+        </div>
+
+        <div class="class-card">
+            <img src="meditation.jpg" alt=" Meditation " class="class-image">
+            <h2> Meditation </h2>
+            <p>Mediation has several types so it is vital to choose and perform it with all the expertise. Here, at Exalted Fitness, our proficient trainer guides all the gym members individually and stay vigilant towards their body postures and positions. We provide importance of mental peace as much as to physical strength. Our trainers not only perform their task with utmost perfection, but will also help you to find inner happiness and peace with mediation.</p>
+            <p class="time-slot">Tue & Thu: 10:30 AM</p>
+            <a href="Enroll Now.html">
+            <button class="enroll-btn">Enroll Now</button>
+        </a>
+        </div>
+
+        <div class="class-card">
+            <img src="zumba.jpg" alt="Zumba Dance" class="class-image">
+            <h2>Zumba Dance</h2>
+            <p>Zumba's most well-known and popular program is its namesake class, Zumba. This high-energy dance class features intervals that help improve cardiovascular fitness while also enhancing balance, coordination, agility, and to some degree, strength through the application of beginner-accessible choreography.</p>
+            <p class="time-slot">Mon & Fri: 2:00 PM</p>
+            <a href="Enroll Now.html">
+            <button class="enroll-btn">Enroll Now</button>
+            </a>
+        </div>
+
+        <div class="class-card">
+            <img src="Weight-Loss.jpg" alt="Weight Loss/Weight Gain" class="class-image">
+            <h2>Weight Loss/Weight Gain</h2>
+            <p>
+
+                People are obsessing over getting the perfect body weight, and we believe that it is good. Getting aware
+                of what you need is very important. Maintaining a perfect weight is very tough and we will help you to
+                do so. We have special weight gaining plans and weight loss plans which our trainers will help you to
+                execute. Exalted Fitness gym does not promote supplements which can harm your body and later leads to
+                negative impact.</p>
+            <p class="time-slot">Wed & Sat: 4:00 PM</p>
+            <a href="Enroll Now.html">
+            <button class="enroll-btn">Enroll Now</button>
+        </a>
+        </div>
+
+        <div class="class-card">
+            <img src="aerobics.jpg" alt="Aerobics Class" class="class-image">
+            <h2>Aerobics Class</h2>
+            <p>Regardless of age, weight or athletic ability, aerobic activity is good for you. Aerobic activity has
+                many health benefits, no matter your age. As your body adapts to regular aerobic exercise, you'll get
+                stronger and fitter.</p>
+            <p class="time-slot">Tue & Thu: 1:00 PM</p>
+            <a href="Enroll Now.html">
+            <button class="enroll-btn">Enroll Now</button>
+            </a>
+        </div>
+
+        <div class="class-card">
+            <img src="personalTraining.jpg" alt="personal Training" class="class-image">
+            <h2>personal Training</h2>
+            <p>The personal training program includes several incorporations such as strength, flexibility,
+                coordination, speed, and response for analysis your current and improving health. We aim at fostering a
+                powerful exercise program and assist customers with accomplishing their fitness goals.</p>
+            <p class="time-slot">Mon & Wed: 6:00 PM</p>
+            <a href="Enroll Now.html">
+            <button class="enroll-btn">Enroll Now</button>
+            </a>
+        </div>
+
+        <div class="class-card">
+            <img src="crossfit.jpg" alt="crossfit" class="class-image">
+            <h2>crossfit</h2>
+            <p>A type of stop and go aerobic exercise, Cross Fit is a strength and molding exercise that is comprised of
+                utilitarian development performed at an extreme focus level. Cross Fit is like Orange Theory in that
+                there is a norm "exercise of the day" (WOD) that all individuals complete around the same time.</p>
+            <p class="time-slot">Fri & Sun: 5:00 PM</p>
+            <a href="Enroll Now.html">
+            <button class="enroll-btn">Enroll Now</button>
+            </a>
+        </div>
+
+        <div class="class-card">
+            <img src="Dance Bhangra.png" alt="Dance Bhangra" class="class-image">
+            <h2>Dance/Bhangra</h2>
+            <p>Exalted Fitness centre focuses on bringing Bhangra to everyone. With our expert Bhangra instructors, we
+                want to make it possible for any person to learn and enjoy Bhangra, especially as it continues to become
+                a recognizable dance form around the world..</p>
+            <p class="time-slot">Tue & Thu: 7:00 PM</p>
+            <a href="Enroll Now.html">
+            <button class="enroll-btn">Enroll Now</button>
+            </a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: planetfitness@gmail.com</p>
+                <p>Phone: 9302563896</p>
+                <p>Address: Gandhi Chowk<br>Lalganj Vaishali(844101)</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#classes">Classes</a></p>
+                <p><a href="#membership">Membership</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Timing</h4>
+                <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+                <p>Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Planet Fitness. All rights reserved.</p>
+        <p>Website Desing by Ujjawal Singh</p>
+    </footer>
+</body>
+
+</html>

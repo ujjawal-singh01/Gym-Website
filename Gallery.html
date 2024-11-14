@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center; color: #333; padding: 40px 0; font-size: 2.5rem; font-weight: bold; text-transform: uppercase; margin: 0;">
+        Gym Gallery
+    </h1>
+    <div class="gallery-container">
+        <style>
+            .gallery-container {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                padding: 20px;
+            }
+            .gallery-item {
+                width: 100%;
+                height: 300px;
+                overflow: hidden;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+            .gallery-item:hover {
+                transform: scale(1.05);
+            }
+            .gallery-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    margin: 1rem;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+        </style>
+
+        <div class="gallery-item">
+            <img src="gym01.webp" alt="Gym Equipment">
+        </div>
+        <div class="gallery-item">
+            <img src="Battle-Ropes02.webp" alt="Weight Training">
+        </div>
+        <div class="gallery-item">
+            <img src="Bodyweight03.webp" alt="Cardio Area">
+        </div>
+        <div class="gallery-item">
+            <img src="Bosu-Ball-Male-and-Female04.webp" alt="Yoga Studio">
+        </div>
+        <div class="gallery-item">
+            <img src="Butterfly-Stretch05.webp" alt="Personal Training">
+        </div>
+        <div class="gallery-item">
+            <img src="Chalk-06.webp" alt="CrossFit Area">
+        </div>
+        <div class="gallery-item">
+            <img src="Dumbbell-Female07.webp" alt="Free Weights">
+        </div>
+        <div class="gallery-item">
+            <img src="Free-Weights-2-Males08.webp" alt="Stretching Area">
+        </div>
+        <div class="gallery-item">
+            <img src="Jump-Rope09.webp" alt="Boxing Ring">
+        </div>
+        <div class="gallery-item">
+            <img src="Mirror-Dumbbell-Pick-Up10.webp" alt="Locker Room">
+        </div>
+        <div class="gallery-item">
+            <img src="Sit-Up-2-Female11.webp" alt="Protein Bar">
+        </div>
+        <div class="gallery-item">
+            <img src="Tricep-Extension-Female12.webp" alt="Swimming Pool">
+        </div>
+    </div>
+        
+        
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: planetfitness@gmail.com</p>
+                    <p>Phone: 9302563896</p>
+                    <p>Address: Gandhi Chowk<br>Lalganj Vaishali(844101)</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#about">About Us</a></p>
+                    <p><a href="#classes">Classes</a></p>
+                    <p><a href="#membership">Membership</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Timing</h4>
+                    <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+                    <p>Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p>&copy; 2024 Planet Fitness. All rights reserved.</p>
+            <p>Website Desing by Ujjawal Singh</p>
+        </footer>
+        
+</body>
+</html>

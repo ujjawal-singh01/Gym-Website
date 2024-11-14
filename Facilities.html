@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facilities</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .facilities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .facility-card {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .facility-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .facility-info {
+            padding: 20px;
+        }
+
+        .facility-info h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .facility-info p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .hours {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #eee;
+            border-radius: 10px;
+        }
+
+        .hours h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .hours ul {
+            list-style: none;
+        }
+
+        .hours li {
+            margin-bottom: 8px;
+            color: #666;
+        }
+        footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    margin: 1rem;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+    </style>
+
+    <header>
+        <h1>Our Gym Facilities</h1>
+        <p>State-of-the-art equipment and spaces for your fitness journey</p>
+    </header>
+
+    <div class="container">
+        <div class="facilities-grid">
+            <div class="facility-card">
+                <img src="cafe.jpg" alt="Cafe">
+                <div class="facility-info">
+                    <h3>Cafe</h3>
+                    <p>You can have fresh, healthy, nutrient rich food and beverages at affordable prices by enrolling today at Exalted Fitness.We use tasty, natural ingredients and super-foods packed with nutrients and vitamins to benefit your mind and body..</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="lockers.jpg" alt="lockers">
+                <div class="facility-info">
+                    <h3>Lockers</h3>
+                    <p>Exalted Fitness offers lockers facility to keep your essentials safe during workout. Our lockers are crafted to meet the strict quality standards.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="dietician.jpg" alt="Diet Counseling">
+                <div class="facility-info">
+                    <h3>Diet Counseling</h3>
+                    <p>We cater our customers with specialized diet plan that is planned according to their fitness goals after analysis their current physical & mental health.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hours">
+            <h2>Operating Hours</h2>
+            <ul>
+                <li>Monday - Friday: 5:00 AM - 11:00 PM</li>
+                <li>Saturday: 6:00 AM - 10:00 PM</li>
+                <li>Sunday: 7:00 AM - 9:00 PM</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: planetfitness@gmail.com</p>
+                <p>Phone: 9302563896</p>
+                <p>Address: Gandhi Chowk<br>Lalganj Vaishali(844101)</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#classes">Classes</a></p>
+                <p><a href="#membership">Membership</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Timing</h4>
+                <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+                <p>Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Planet Fitness. All rights reserved.</p>
+        <p>Website Desing by Ujjawal Singh</p>
+    </footer>
+</body>
+</html>

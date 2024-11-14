@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll Now</title>
+</head>
+<body>
+<div class="booking-container">
+    <h2>Book Your Gym Course</h2>
+    <form action="/booking" method="post">
+        <div class="customer-details">
+            <h3>Customer Details</h3>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required><br><br>
+        </div>
+        <div class="course-details">
+            <h3>Course Details</h3>
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Select a course</option>
+                <option value="Yoga Flow">Yoga Flow</option>
+                <option value="Meditation">Meditation</option>
+                <option value="Zumba Dance">Zumba Dance</option>
+                <option value="Weight Loss/Weight Gain">Weight Loss/Weight Gain</option>
+                <option value="Aerobics">Aerobics</option>
+                <option value="personal-training">Personal Training</option>
+                <option value="Crossfit">Crossfit</option>
+            </select><br><br>
+            <label for="duration">Duration:</label>
+            <select id="duration" name="duration" required>
+                <option value="">Select duration</option>
+                <option value="1-month">1 Month</option>
+                <option value="3-months">3 Months</option>
+                <option value="6-months">6 Months</option>
+                <option value="1-year">1 Year</option>
+            </select><br><br>
+        </div>
+        <div class="payment-options">
+            <h3>Payment Options</h3>
+            <label for="payment-method">Select Payment Method:</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="">Select payment method</option>
+                <option value="credit-card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="UPI">UPI</option>
+            </select><br><br>
+        </div>
+        <input type="submit" value="Book Now">
+    </form>
+</div>
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: planetfitness@gmail.com</p>
+            <p>Phone: 9302563896</p>
+            <p>Address: Gandhi Chowk<br>Lalganj Vaishali(844101)</p>
+        </div>
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <p><a href="#home">Home</a></p>
+            <p><a href="#about">About Us</a></p>
+            <p><a href="#classes">Classes</a></p>
+            <p><a href="#membership">Membership</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Timing</h4>
+            <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+            <p>Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <p>&copy; 2024 Planet Fitness. All rights reserved.</p>
+    <p>Website Desing by Ujjawal Singh</p>
+</footer>
+
+<style>
+    .booking-container {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .customer-details, .course-details, .payment-options {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="email"], input[type="tel"], select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+    footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    margin: 1rem;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+</style>
+
+</body>
+</html>

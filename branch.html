@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="branch.css">
+</head>
+
+<body>
+    <style>
+        .branch-header {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .branch-header h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .branch-header p {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .branch-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .branch-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .branch-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .branch-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .branch-name {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .branch-address {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .branch-contact {
+            color: #444;
+        }
+
+        .facilities {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .facility-tag {
+            background-color: #f0f0f0;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #555;
+        }
+        footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd700;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    margin: 1rem;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    color: #ffd700;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+    </style>
+    <header class="branch-header">
+        <h1>Our Branches</h1>
+        <p>Find a Planet Fitness location near you</p>
+    </header>
+
+
+
+    <div class="branch-container">
+        <!-- Branch 1 -->
+        <div class="branch-card">
+            <img src="branch01.webp" alt="Branch 1" class="branch-image">
+            <h2 class="branch-name">Downtown Fitness</h2>
+            <p class="branch-address"> Boading Road , Patna</p>
+            <p class="branch-contact">Phone: (555) 123-4567</p>
+            <div class="facilities">
+                <span class="facility-tag">24/7 Access</span>
+                <span class="facility-tag">Pool</span>
+                <span class="facility-tag">Sauna</span>
+            </div>
+        </div>
+
+        <!-- Branch 2 -->
+        <div class="branch-card">
+            <img src="branch 02.jpg" alt="Branch 2" class="branch-image">
+            <h2 class="branch-name">Gold's Gym</h2>
+            <p class="branch-address">Yadav Chowk , Hajipur</p>
+            <p class="branch-contact">Phone: (555) 234-5678</p>
+            <div class="facilities">
+                <span class="facility-tag">Personal Training</span>
+                <span class="facility-tag">Yoga Studio</span>
+                <span class="facility-tag">Cardio Zone</span>
+            </div>
+        </div>
+
+        <!-- Branch 3 -->
+        <div class="branch-card">
+            <img src="Branch 03.jpg" alt="Branch 3" class="branch-image">
+            <h2 class="branch-name">AnyTime Fitness</h2>
+            <p class="branch-address">Opposite of Chhata Chowk , Muzafferpur</p>
+            <p class="branch-contact">Phone: (555) 345-6789</p>
+            <div class="facilities">
+                <span class="facility-tag">CrossFit</span>
+                <span class="facility-tag">Boxing Ring</span>
+                <span class="facility-tag">Juice Bar</span>
+            </div>
+        </div>
+
+        <!-- Branch 4 -->
+        <div class="branch-card">
+            <img src="branch04.webp" alt="Branch 4" class="branch-image">
+            <h2 class="branch-name">Pure Gym</h2>
+            <p class="branch-address">Main Chowk , Samastipur</p>
+            <p class="branch-contact">Phone: (555) 456-7890</p>
+            <div class="facilities">
+                <span class="facility-tag">Swimming Pool</span>
+                <span class="facility-tag">Spa</span>
+                <span class="facility-tag">Kids Area</span>
+            </div>
+        </div>
+
+        <!-- Branch 5 -->
+        <div class="branch-card">
+            <img src="Branch 05.jpg" alt="Branch 5" class="branch-image">
+            <h2 class="branch-name">Southside Fitness</h2>
+            <p class="branch-address">Ghataro Chowk , Lalganj Vaishali</p>
+            <p class="branch-contact">Phone: (555) 567-8901</p>
+            <div class="facilities">
+                <span class="facility-tag">Group Classes</span>
+                <span class="facility-tag">Steam Room</span>
+                <span class="facility-tag">Nutrition Center</span>
+            </div>
+        </div>
+
+        <!-- Branch 6 -->
+        <div class="branch-card">
+            <img src="branch06.jpg" alt="Branch 6" class="branch-image">
+            <h2 class="branch-name">Fitness Fusion Gym</h2>
+            <p class="branch-address">Naya Bajar , Saharsa</p>
+            <p class="branch-contact">Phone: (555) 678-9012</p>
+            <div class="facilities">
+                <span class="facility-tag">Outdoor Area</span>
+                <span class="facility-tag">Rock Climbing</span>
+                <span class="facility-tag">Meditation Room</span>
+            </div>
+        </div>
+
+        <!-- Branch 7 -->
+        <div class="branch-card">
+            <img src="branch07.jpg" alt="Branch 7" class="branch-image">
+            <h2 class="branch-name">SR Fitness Center</h2>
+            <p class="branch-address">Hajipur Road , Sonpur</p>
+            <p class="branch-contact">Phone: (555) 789-0123</p>
+            <div class="facilities">
+                <span class="facility-tag">Rooftop Training</span>
+                <span class="facility-tag">Dance Studio</span>
+                <span class="facility-tag">Recovery Center</span>
+            </div>
+        </div>
+
+        <!-- Branch 8 -->
+        <div class="branch-card">
+            <img src="branch08.jpg" alt="Branch 8" class="branch-image">
+            <h2 class="branch-name">Zone Fitness Collective</h2>
+            <p class="branch-address">Khazanchi Road , Patna</p>
+            <p class="branch-contact">Phone: (555) 890-1234</p>
+            <div class="facilities">
+                <span class="facility-tag">Tennis Court</span>
+                <span class="facility-tag">Basketball Court</span>
+                <span class="facility-tag">Protein Bar</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: planetfitness@gmail.com</p>
+                <p>Phone: 9302563896</p>
+                <p>Address: Gandhi Chowk<br>Lalganj Vaishali(844101)</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <p><a href="#home">Home</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#classes">Classes</a></p>
+                <p><a href="#membership">Membership</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Timing</h4>
+                <p>Monday - Friday: 5:00 AM - 11:00 PM</p>
+                <p>Saturday - Sunday: 7:00 AM - 9:00 PM</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; 2024 Planet Fitness. All rights reserved.</p>
+        <p>Website Desing by Ujjawal Singh</p>
+    </footer>
+    
+
+    
+</body>
+
+</html>
